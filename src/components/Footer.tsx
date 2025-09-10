@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
           <h4 className="text-lg md:text-xl font-bold mb-2">Quick Links</h4>
           <ul className="space-y-1">
             <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="/about" className="hover:underline">About</a></li>
-            <li><a href="/services" className="hover:underline">Service</a></li>
-            <li><a href="/departments" className="hover:underline">Department</a></li>
-            <li><a href="/appointment" className="hover:underline">Appointment</a></li>
+            <li><a href="#about" className="hover:underline">About</a></li>
+            <li><a href="#services" className="hover:underline">Service</a></li>
+            <li><a href="#departments" className="hover:underline">Department</a></li>
+            <li><a href="#doctors" className="hover:underline">Appointment</a></li>
           </ul>
         </div>
         <div>

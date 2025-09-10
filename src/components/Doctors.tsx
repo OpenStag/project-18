@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Doctors: React.FC = () => {
   return (
-    <section className="py-10">
+    <section id="doctors" className="py-10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary mb-4">Our Doctors</h2>
         <h3 className="text-2xl font-bold mb-6">Meet Our Trusted Doctors</h3>
