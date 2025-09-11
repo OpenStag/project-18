@@ -146,9 +146,90 @@ return (
         </div>
       </section>
 
-      
+      <section className="py-10 px-6">
+        <div className="relative w-full h-[800px] bg-cover bg-center flex items-center justify-center"
+          style={{ backgroundImage: "url('/Rectangle 72.png')" }}>
+          <h1 className="text-6xl font-black text-blue-700">Dental Care</h1>
+        </div>
 
+        <h1 className="py-5 flex flex-wrap justify-center text-4xl font-black text-black">Our Doctors</h1>
+        <h3 className="py-5 flex flex-wrap justify-center text-xl font-black text-black">We  keep your smile healthy and bright</h3>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle (1).png"
+              alt="Dr. Maya Fernando"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr.Ethan Mitchell</h3>
+            <p className="text-black flex justify-center">Dentist</p>
+          </div>
 
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle 92.png"
+              alt="Dr. Aryan Samanasayaka"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr.Grace Thompson</h3>
+            <p className="text-black flex justify-center">Dentist</p>
+          </div>
+
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle 91.png"
+              alt="Dr. James Carter"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr.Emily Roberts</h3>
+            <p className="text-black flex justify-center">Dentist</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 px-6">
+        <div className="relative w-full h-[800px] bg-cover bg-center flex items-center justify-center"
+          style={{ backgroundImage: "url('/Rectangle 82.png')" }}>
+          <h1 className="text-6xl font-black text-blue-700">Eye Care</h1>
+        </div>
+
+        <h1 className="py-5 flex flex-wrap justify-center text-4xl font-black text-black">Our Doctors</h1>
+        <h3 className="py-5 flex flex-wrap justify-center text-xl font-black text-black">We protect and improve your vision with expertcare.</h3>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle 93.png"
+              alt="Dr. Maya Fernando"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr. Emily Jonson</h3>
+            <p className="text-black flex justify-center">Ophthalmologists</p>
+          </div>
+
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle 89.png"
+              alt="Dr. Aryan Samanasayaka"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr.Micheal  Roberts</h3>
+            <p className="text-black flex justify-center">Ophthalmologists</p>
+          </div>
+
+          <div className="border p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <img
+              src="/Rectangle 90.png"
+              alt="Dr. James Carter"
+              className="h-100 w-full object-cover rounded mb-4"
+            />
+            <h3 className="flex text-2xl font-semibold justify-center">Dr.Daniel Thompson</h3>
+            <p className="text-black flex justify-center">Ophthalmologists</p>
+          </div>
+        </div>
+      </section>
   </div>
 );
 }
+
