@@ -79,4 +79,4 @@ const Footer: FC = () => {
   );
 };
 
-export default Footer; // ✅ Important
+export default Footer; 
