@@ -21,7 +21,7 @@ export default function Navbar() {
                 <span className="mx-12 font-bold text-blue-700 text-xl italic">Hospital</span>
             </div>
      </div>
-      <div className="flex space-x-6">
+      <div className="flex space-x-7">
         <Link href="/"  className="text-lg text-black hover:text-blue-300">Home</Link>
         <Link href="/About" className="text-lg text-black hover:text-blue-300">About</Link>
         <Link href="/Service" className="text-lg text-black hover:text-blue-300">Service</Link>
