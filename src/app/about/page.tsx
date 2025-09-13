@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const AboutPage: React.FC = () => {
   return (
     <main className="bg-[#e7e6ff] min-h-screen">
       {/* Top Section */}
-      <section className="relative w-full h-[80vh] flex justify-center items-center">
+      <section className="relative w-full h-[120vh] flex justify-center items-center">
         <Image
           src="/top.png"
           alt="About Us Cover"
@@ -18,26 +19,27 @@ const AboutPage: React.FC = () => {
         <div className="relative z-20 text-center px-4 max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-extrabold text-[#1e1e9b] mb-6">About Us</h1>
         
-        </div>
-      </section>
-<section className="bg-[#6E8BD7] px-6 py-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+         </div>
+       </section>
+     <section className="bg-[#6E8BD7] px-6 py-16">
+       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Midle Section */}
         <div>
           <h2 className="text-4xl font-bold text-[#1E1E9B] mb-4">About Us</h2>
           <h3 className="text-3xl font-bold text-[#000000] mb-6 leading-snug">
             More than 20+ years <br /> provide medical
           </h3>
-          <p className="text-gray-800 leading-relaxed mb-8 text-lg max-w-lg">
+            <p className="text-gray-800 leading-relaxed mb-8 text-lg max-w-lg">
             We are privileged to work with hundreds of future-thinking medical
             professionals, including many of the world’s top hardware, software,
             and brands. Feel safe and comfortable in establishing your
             healthcare with us.
-          </p>
-          <button className="bg-[#2D0FA6] text-white font-bold px-10 py-4 rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 text-lg mb-12">
-            Learn More
-          </button>
-
+            </p>
+            <Link href="#" className="inline-block mb-12">
+            <span className="bg-[#2D0FA6] text-white font-bold px-10 py-4 rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 text-lg">
+              Learn More
+            </span>
+            </Link>
           {/* middle content Section */}
           <div className="grid grid-cols-2 gap-8">
             
@@ -80,6 +82,56 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
     </section>
+
+      {/* Bottom Section */}
+
+    <section className="bg-[#E0E1FF] px-6 py-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center">
+          <div className="w-[400px] h-[500px] overflow-hidden rounded-[50px]">
+            <Image
+              src="/botom.png"
+              alt="doctor"
+              width={400}
+              height={500}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold text-[#1e1e9b] mb-6 leading-snug">
+            Your Health and happiness are our top priorities.
+          </h2>
+          <p className="text-gray-800 leading-relaxed mb-6 text-lg max-w-xl">
+            At Trinity Hospital, we are dedicated 
+            to delivering compassionate,patient
+            -centered healthcare with the highest standards of excellence.
+            Our team of experienced doctors, nurses, and healthcare professionals
+            work together to provide advanced medical services in a safe and
+            caring environment.
+          </p>
+
+          <p className="text-gray-800 leading-relaxed mb-8 text-lg max-w-xl">
+            With state-of-the-art facilities, modern technology, and a commitment
+            to continuous innovation, we ensure every patient receives
+            personalized treatment and support. Beyond healing, we strive to build
+            trust, promote wellness, and improve the quality of life for our
+            community.
+          </p>
+            <Link href="#" className="inline-block">
+            <span className="bg-[#2d0fa6] text-white font-bold px-10 py-4 rounded-md shadow-lg hover:scale-105 transition-transform duration-300 text-lg">
+              Book Now
+            </span>
+            </Link>
+          </div>
+      </div>
+    </section>
+
+
+
+
       
     </main>
   );
