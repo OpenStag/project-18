@@ -1,30 +1,83 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-secondary py-8 md:py-10">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">About Us</h2>
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-          <div className="md:w-1/2">
-            <h3 className="text-xl md:text-2xl font-bold">More than 20+ years provide medical</h3>
-            <p className="text-gray-600 text-sm md:text-base">We are privileged to work with hundreds of the world&#39;s top hospitals, including many top brands, feel safe and comfortable in establishing.</p>
-            <button className="btn-primary px-4 py-2 rounded mt-4">Read More</button>
+    <section id="about" className="bg-[#F5F7FF] py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Title */}
+        <h2 className="text-4xl md:text-6xl font-extrabold text-[#3212E4] mb-8">
+          About Us
+        </h2>
+
+        {/* 2-column layout */}
+        <div className="grid lg:grid-cols-2 items-center gap-12">
+          {/* Left: copy */}
+          <div>
+            <h3 className="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
+              More than 20+ years <br className="hidden md:block" />
+              provide&nbsp;<span className="whitespace-nowrap">medical</span>
+            </h3>
+
+            <p className="mt-5 max-w-md text-slate-600 text-base md:text-[17px] leading-relaxed">
+              We are privileged to work with hundreds of the world&apos;s top
+              hospitals, including many top brands, feel safe and comfortable in
+              establishing.
+            </p>
+
+            <a
+              href="#"
+              className="mt-6 inline-flex items-center rounded-lg bg-[#3212E4] px-6 py-3 text-white font-semibold shadow hover:bg-[#2810c0] transition-colors"
+            >
+              Read More
+            </a>
           </div>
-          <div className="relative md:w-1/2">
-            <Image src="/images/about-doctor.png" alt="Doctor" width={400} height={400} className="w-full rounded-full bg-white p-4 object-cover" />
-            <Image src="/images/frame.png" alt="Frame" width={400} height={400} className="absolute inset-0 w-full h-full object-cover" />
+
+          {/* Right: image with decorative frame */}
+          <div className="relative isolate w-full max-w-[560px] mx-auto">
+            {/* frame.svg/png behind (kept from your assets) */}
+            <Image
+              src="/images/frame.png"
+              alt="Decorative frame"
+              width={720}
+              height={720}
+              className="z-1 pointer-events-none select-none absolute inset-0 w-full h-full object-contain"
+              priority
+            />
+
+            {/* doctor photo on top, not cropped */}
+            <Image
+              src="/images/about-doctor.png"
+              alt="Doctor"
+              width={720}
+              height={720}
+              className="z-0 relative w-full h-auto object-contain"
+              priority
+            />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 md:mt-8">
-          <div className="text-center">
-            <span className="text-3xl md:text-4xl font-bold text-primary">586+</span>
-            <p>Active clients</p>
+
+        {/* Stats */}
+        <div className="mt-12 md:mt-16 grid sm:grid-cols-2 gap-10">
+          <div className="flex items-start gap-4">
+            {/* If you have icons, place them here. Otherwise remove this Image. */}
+            {/* <Image src="/images/icon-clients.svg" alt="" width={56} height={56} /> */}
+            <div>
+              <div className="text-4xl md:text-5xl font-extrabold text-[#3212E4]">
+                586+
+              </div>
+              <div className="mt-1 italic text-[#2A1A9F]">Active clients</div>
+            </div>
           </div>
-          <div className="text-center">
-            <span className="text-3xl md:text-4xl font-bold text-primary">256+</span>
-            <p>Projects Complete</p>
+
+          <div className="flex items-start gap-4">
+            {/* <Image src="/images/icon-projects.svg" alt="" width={56} height={56} /> */}
+            <div>
+              <div className="text-4xl md:text-5xl font-extrabold text-[#3212E4]">
+                256+
+              </div>
+              <div className="mt-1 italic text-[#2A1A9F]">Projects complete</div>
+            </div>
           </div>
         </div>
       </div>
