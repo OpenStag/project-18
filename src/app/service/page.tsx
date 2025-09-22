@@ -1,21 +1,6 @@
 export default function Services() {
   return (
     <div className="font-sans">
-      {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 shadow-md bg-white">
-        <div className="flex items-center space-x-2 ">
-          <img src="/logo.png" alt="Trinity Hospital Logo" className="h-[60px] w-[80px]" />
-          <span className="text-2xl text-black font-extrabold italic ">Trinity <br></br><span className="text-blue-600 ml-10">Hospital</span></span>
-        </div>
-        <nav className="space-x-6 text-black font-bold">
-          <a href="/" className="hover:text-black-600">Home</a>
-          <a href="/about" className="hover:text-black-600">About</a>
-          <a href="/services" className="text-blue-900 font-bold">Service</a>
-          <a href="/departments" className="hover:text-black-600">Department</a>
-          <a href="/appointment" className="hover:text-blue-600">Appointment</a>
-          <button className="bg-blue-900 text-white px-4 py-2 rounded-lg">Register</button>
-        </nav>
-      </header>
 
       {/* Hero Section */}
       <section className="relative bg-gray-100">
