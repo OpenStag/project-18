@@ -1,12 +1,17 @@
-import Image from "next/image";
-import AboutPage from "./about/page";
-import Navbar from "../component/Navbar";
-import Footer from "@/component/Footer";
+import About from "@/components/About";
+import Departments from "@/components/Departments";
+import Doctors from "@/components/Doctors";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <div>
-      
-    </div>
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <Departments />
+      <Doctors />
+    </main>
   );
 }

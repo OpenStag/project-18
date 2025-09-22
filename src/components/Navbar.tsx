@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="flex space-x-7">
         <Link href="/"  className="text-lg text-black hover:text-blue-300">Home</Link>
         <Link href="/about" className="text-lg text-black hover:text-blue-300">About</Link>
-        <Link href="/service  " className="text-lg text-black hover:text-blue-300">Service</Link>
+        <Link href="/service" className="text-lg text-black hover:text-blue-300">Service</Link>
         <Link href="/department" className="text-lg text-black hover:text-blue-300">Department</Link>
         <Link href="/appointment" className="text-lg text-black hover:text-blue-300">Appointment</Link>
       </div>
