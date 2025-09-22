@@ -24,10 +24,10 @@ export default function Navbar() {
      </div>
       <div className="flex space-x-7">
         <Link href="/"  className="text-lg text-black hover:text-blue-300">Home</Link>
-        <Link href="/About" className="text-lg text-black hover:text-blue-300">About</Link>
-        <Link href="/Service" className="text-lg text-black hover:text-blue-300">Service</Link>
-        <Link href="/Department" className="text-lg text-black hover:text-blue-300">Department</Link>
-        <Link href="/Appointment" className="text-lg text-black hover:text-blue-300">Appointment</Link>
+        <Link href="/about" className="text-lg text-black hover:text-blue-300">About</Link>
+        <Link href="/service  " className="text-lg text-black hover:text-blue-300">Service</Link>
+        <Link href="/department" className="text-lg text-black hover:text-blue-300">Department</Link>
+        <Link href="/appointment" className="text-lg text-black hover:text-blue-300">Appointment</Link>
       </div>
 
       <div>
