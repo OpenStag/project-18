@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
 
       <div>
-        <Link href="/"  className="bg-blue-900 hover:bg-blue-700 text-white font-semibold px-5 py-3 rounded-md">
+        <Link href="/form"  className="bg-blue-900 hover:bg-blue-700 text-white font-semibold px-5 py-3 rounded-md">
         Register
         </Link>
       </div>
