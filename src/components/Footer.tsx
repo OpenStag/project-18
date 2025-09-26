@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
           </form>
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <div className="flex space-x-4">
+      <div className="container mx-auto px-4 mt-6 flex flex-row md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex space-x-4 max-w-50 md:w-auto justify-center md:justify-start">
           <a href="#"><Image src="/images/facebook.png" alt="Facebook" width={400} height={400} className="h-6" /></a> 
           <a href="#"><Image src="/images/instagram.png" alt="Instagram" width={400} height={400} className="h-6" /></a>
           <a href="#"><Image src="/images/x.png" alt="X" width={400} height={400} className="h-6" /></a>
