@@ -24,8 +24,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    const normalizedEmail = typeof email === 'string' ? email.trim() : '';
+    const atIndex = normalizedEmail.indexOf('@');
+    const dotIndex = normalizedEmail.lastIndexOf('.');
+    const hasValidEmailShape =
+      atIndex > 0 &&
+      dotIndex > atIndex + 1 &&
+      dotIndex < normalizedEmail.length - 1 &&
+      !normalizedEmail.includes(' ');
+
+    if (!hasValidEmailShape) {
       return NextResponse.json(
         { message: 'Invalid email format' },
         { status: 400 }
@@ -35,7 +43,7 @@ export async function POST(request: NextRequest) {
     const { data: existingUser, error: checkError } = await supabase
       .from('users')
       .select('email')
-      .eq('email', email)
+      .eq('email', normalizedEmail)
       .maybeSingle();
 
     if (checkError) {
@@ -58,7 +66,7 @@ export async function POST(request: NextRequest) {
       .insert([
         {
           name,
-          email,
+          email: normalizedEmail,
           password_hash: password, // NOTE: Hash in production
           phone,
           created_at: new Date().toISOString(),
@@ -77,7 +85,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         message: 'User registered successfully',
-        user: { id: data?.[0]?.id, name, email, phone },
+        user: { id: data?.[0]?.id, name, email: normalizedEmail, phone },
       },
       { status: 201 }
     );
